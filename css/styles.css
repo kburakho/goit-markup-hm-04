@@ -374,7 +374,7 @@ body {
   background: #31d0aa;
 }
 
-..social-list-icon:hover {
+.social-list-icon:hover {
   fill: #f4f4fd;
 }
 
