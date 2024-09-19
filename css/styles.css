@@ -455,6 +455,7 @@ body {
 }
 
 .page-footer-text {
+  margin-right: 120px;
   max-width: 264px;
   font-weight: 400;
   font-size: 16px;
@@ -463,4 +464,44 @@ body {
   color: #f4f4fd;
 }
 
+.footer {
+  display: flex;
+}
+
+.icons-footer-title {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.icons-footer-list {
+  display: flex;
+  column-gap: 16px;
+}
+
+.icons-footer-list-item {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  background: #4d5ae5;
+  border-radius: 50%;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-list-icon {
+  position: relative;
+  left: 20%;
+  bottom: -20%;
+}
+
+.icons-footer-list-item:hover {
+  background: #31d0aa;
+}
+
+.footer-list-icon:hover {
+  fill: #f4f4fd;
+}
 /*============/PAGE FOOTER STYLES============*/
