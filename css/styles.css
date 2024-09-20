@@ -399,15 +399,16 @@ body {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-item {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: calc((100% - 48px) / 3);
   border-radius: 0 0 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16),
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -471,13 +472,13 @@ body {
 
 /*============PAGE FOOTER STYLES============*/
 
-.container .footer {
+.footer {
+  display: flex;
   align-items: baseline;
 }
 .logo-footer {
   display: block;
   margin-right: 120px;
-  align-items: baseline;
 }
 .page-footer {
   background: #2e2f42;
@@ -537,14 +538,15 @@ body {
   height: 40px;
   background: #4d5ae5;
   border-radius: 50%;
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-list-icon {
   fill: #f4f4fd;
 }
 
-.icons-footer-list-item-link:hover {
+.icons-footer-list-item-link:hover,
+:focus {
   background-color: #31d0aa;
 }
 
