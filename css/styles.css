@@ -187,7 +187,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/people-office\ 1.jpg);
+    url(../images/people-office.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -471,8 +471,10 @@ body {
 
 /*============PAGE FOOTER STYLES============*/
 
+.container .footer {
+  align-items: baseline;
+}
 .logo-footer {
-  display: flex;
   margin-right: 120px;
   align-items: baseline;
 }
