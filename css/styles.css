@@ -475,6 +475,7 @@ body {
   align-items: baseline;
 }
 .logo-footer {
+  display: block;
   margin-right: 120px;
   align-items: baseline;
 }
