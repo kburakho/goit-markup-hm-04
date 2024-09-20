@@ -182,13 +182,14 @@ body {
 /*============HERO SECTION STYLES============*/
 
 .hero-section {
+  max-width: 1440px;
   padding: 188px 0;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/people-office\ 1.jpg);
   background-position: center;
-  background-size: 1440px;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -221,7 +222,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-service-btn:hover,
@@ -256,6 +257,7 @@ body {
   width: 264px;
   height: 112px;
   background: #f4f4fd;
+  margin-bottom: 8px;
 }
 
 .approach-list-item:not(:last-child) {
@@ -263,7 +265,6 @@ body {
 }
 
 .approach-list-title {
-  margin-top: 8px;
   margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
@@ -344,7 +345,7 @@ body {
   color: #434455;
 }
 
-.review-social-link {
+.rev-social-link-list {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -353,31 +354,25 @@ body {
   margin: 0 16px;
 }
 
-.review-social-link-item {
+.rev-social-link-list-item-link {
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 40px;
   height: 40px;
   background: #4d5ae5;
   border-radius: 50%;
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-icon {
-  position: relative;
-  left: 20%;
-  bottom: -20%;
-  align-items: center;
   fill: #f4f4fd;
-  justify-content: center;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.review-social-link-item:hover {
+.rev-social-link-list-item-link:hover,
+:focus {
   background: #404bbf;
-}
-
-.social-list-icon:hover {
-  fill: #f4f4fd;
 }
 
 /*============/REVIEW SECTION STYLES============*/
@@ -408,6 +403,11 @@ body {
 
 .portfolio-list-item {
   width: calc((100% - 48px) / 3);
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: #fff;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-item-wrapper {
@@ -421,16 +421,20 @@ body {
   height: 100%;
   left: 0;
   top: 0;
-  background: #4d5ae5;
-  overflow: auto;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 40px 32px 164px;
   color: #f4f4fd;
-  padding: 40px 32px 164px 32px;
+  background: #4d5ae5;
+  overflow: auto;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlay-text {
+  position: absolute;
 }
 
 .portfolio-list-item:hover .portfolio-list-item-overlay {
@@ -470,6 +474,9 @@ body {
 
 /*============PAGE FOOTER STYLES============*/
 
+.logo-footer {
+  margin-right: 120px;
+}
 .page-footer {
   background: #2e2f42;
   padding: 100px 0;
@@ -490,7 +497,6 @@ body {
 }
 
 .page-footer-text {
-  margin-right: 120px;
   max-width: 264px;
   font-weight: 400;
   font-size: 16px;
@@ -501,6 +507,10 @@ body {
 
 .footer {
   display: flex;
+}
+
+.icons-footer {
+  align-items: baseline;
 }
 
 .icons-footer-title {
@@ -514,11 +524,13 @@ body {
 
 .icons-footer-list {
   display: flex;
-  column-gap: 16px;
+  gap: 16px;
 }
 
-.icons-footer-list-item {
+.icons-footer-list-item-link {
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 40px;
   height: 40px;
   background: #4d5ae5;
@@ -527,17 +539,11 @@ body {
 }
 
 .footer-list-icon {
-  position: relative;
-  left: 20%;
-  bottom: -20%;
   fill: #f4f4fd;
 }
 
-.icons-footer-list-item:hover {
+.icons-footer-list-item-link:hover {
   background: #31d0aa;
 }
 
-.footer-list-icon:hover {
-  fill: #f4f4fd;
-}
 /*============/PAGE FOOTER STYLES============*/
