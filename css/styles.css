@@ -370,9 +370,8 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.rev-social-link-list-item-link:hover,
-:focus {
-  background: #404bbf;
+.rev-social-link-list-item-link:hover {
+  background-color: #404bbf;
 }
 
 /*============/REVIEW SECTION STYLES============*/
@@ -546,8 +545,7 @@ body {
   fill: #f4f4fd;
 }
 
-.icons-footer-list-item-link:hover,
-:focus {
+.icons-footer-list-item-link:hover {
   background-color: #31d0aa;
 }
 
