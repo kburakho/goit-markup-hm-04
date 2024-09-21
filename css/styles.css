@@ -374,6 +374,10 @@ body {
   background-color: #404bbf;
 }
 
+.rev-social-link-list-item-link:focus {
+  background-color: #404bbf;
+}
+
 /*============/REVIEW SECTION STYLES============*/
 
 /*============PORTFOLIO SECTION STYLES============*/
@@ -546,6 +550,10 @@ body {
 }
 
 .icons-footer-list-item-link:hover {
+  background-color: #31d0aa;
+}
+
+.icons-footer-list-item-link:focus {
   background-color: #31d0aa;
 }
 
